@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style_web.css">
+
+    <style>
+        body{
+            background: url(images/img20.png) no-repeat;
+            background-size: cover;
+            background-position:  auto;
+         }
+ .contact-right form{
+    width: 50%;
+    background: rgba(255,255,255,.5);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20rem;
+    position: relative;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 20px 0;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px; 
+    text-indent: 20px;
+    letter-spacing: 2px;
+}
+form input::placeholder, form textarea::placeholder{
+    color: whitesmoke;
+}
+
+form .btn2{
+    width: 100%;
+    padding: 14px 60px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background: #ff004f;
+}
+
+#msg{
+    color: #61b752;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.fa-home{
+    font-size: 20px;
+}
+
+.fa-home:hover{
+    color: #ff7800;
+}
+
+
+@media screen and (width <= 720px) {
+    body{
+        background: url(images/img101.jpg);
+    }
+    .contact-right form{
+    width: 100%;
+    transform: translate(0, 20%);
+    margin-top: -10rem;
+}
+
+}
+    </style>
+</head>
+<body>
+
+    <!-- header section start-->
+<header class="hearder">
+    <a href="#" class="logo"> <i class="fas
+         fa-shopping-basket"></i> Alimat </a>
+    
+     
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+    
+    
+    </header>
+
+    <!-- ----------------------------header section end------------------------------- -->
+
+
+
+
+
+    <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Legal full name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="Address" placeholder="Enter Valid Address" required>
+            <input type="text" placeholder="state" required>
+            <input type="text" placeholder="LGA" required>
+            <input type="text" placeholder="name of prefer product" >  
+           <input type="number" placeholder="Product ID is required" required>
+          <textarea name="Message" id="Message"  rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+    </div>
+
+
+
+
+
+
+
+    <!-- ----------------------------------footer section start---------------------------- -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>alimat <i class="fas fa-shopping-basket"></i></h3>
+            <p> purchasing goods from our webpage is 
+                base on pay on dilivery. only poeople 
+                from lagos can purchase.
+            </p>
+            <div class="share">
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-instagram"></a>
+                <a href="" class="fab fa-linkedin"></a>
+                <a href="" class="fab fa-whatsapp"></a>
+                <a href="" class="fab fa-telegram"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="" class="links"> <i class="fas fa-phone"></i> +234-807-513-9800</a>
+            <a href="" class="links"> <i class="fas fa-phone"></i> +234-814-625-2576</a>
+            <a href="" class="links"> <i class="fas fa-envelope"></i> adejoyunusa19@gmail.com</a>
+            <a href="" class="links"> <i class="fas fa-map-marker-alt"></i> odogunyan ikorodu lagos state close to fish farm estate</a>
+        </div>
+
+        <div class="box">
+            <h3>quick link  </h3>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="" class="links"> <i class="fas fa-arrow-right"></i> features</a>
+            <a href="" class="links"> <i class="fas fa-arrow-right"></i> products</a>
+            <a href="" class="links"> <i class="fas fa-arrow-right"></i> categories</a>
+            <a href="" class="links"> <i class="fas fa-arrow-right"></i> review</a>
+            <a href="" class="links"> <i class="fas fa-arrow-right"></i> blogs</a>
+        </div>
+
+        <div class="box">
+
+            <h3>news letter</h3>
+            <p>follow for more update</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="submit" class="btn">
+        </div>
+    </div>
+
+    <div class="credit"> created by <span>adejo yunusa</span> | all right reserved</div>
+</section>
+
+    
+
+     <script src="script_web.js"></script>
+    <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbxGohZXEg7AMPVNdVw_c57lgoqhBYtx5ktYyurbWaoa-QlGjyxi0em7jHp_1IY0-bZ_RQ/exec'
+         const form = document.forms['submit-to-google-sheet']
+         const msg = document.getElementById('msg');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+        window.alert("you have successfully submit your details");
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+    </script>
+
+</body>
+</html>
