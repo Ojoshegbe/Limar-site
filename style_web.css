@@ -364,6 +364,19 @@ cursor: pointer;
     padding-bottom: 10rem;
     position: relative;
     height: 80vh;
+    background: url('images/img111.jpg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.home::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0,0,0,.35);
+    z-index: -2;
+    inset: 0;
 }
 
 .video-link{
